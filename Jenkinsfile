@@ -38,3 +38,8 @@ pipeline {
         }
     }
 }
+post {
+        always {
+            mail bcc: '', body: 'Project build successfully', cc: 'aruntestdemo@gmail.com', from: '', replyTo: '', subject: 'Build Success', to: 'aruntestdemo@gmail.com'
+            )
+        }
